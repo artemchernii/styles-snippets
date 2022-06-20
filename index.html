@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+  <!--<![endif]-->
+
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Super CSS Cool JS workspace</title>
+    <meta name="description" content="CSS&JS tricks and tips" />
+
+    <link
+      rel="shortcut icon"
+      href="img/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="img/favicon/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="img/favicon/apple-touch-icon-114x114.png"
+    />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <style>
+      body {
+        opacity: 0;
+        overflow-x: hidden;
+      }
+      html {
+        background-color: #fff;
+      }
+    </style>
+
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="libs/animate/animate.css" />
+
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
+
+    <script src="libs/modernizr/modernizr.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Loader Wrapper -->
+    <section class="section__topic loader-wrapper">
+      <div class="section__topic-title">
+        Loader + Mouse cursor gradient tracking
+      </div>
+      <div class="bouncing-loader">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="content">
+        <button class="mouse-cursor-gradient-tracking">
+          <span>Hover me</span>
+        </button>
+      </div>
+    </section>
+    <!-- Loader Wrapper -->
+
+    <!-- Backdrop Filter -->
+    <section class="section__topic backdrop-wrapper">
+      <div class="section__topic-title">Backdrop-filter</div>
+      <div class="container">
+        <div class="box">
+          <p>backdrop-filter: blur(10px)</p>
+        </div>
+      </div>
+    </section>
+    <!-- Backdrop Filter -->
+
+    <!-- oncontextmenu="return false" | Disable rightclick  -->
+    <section class="section__topic inputs-section" oncontextmenu="return false">
+      <div class="section__topic-title">Blur filter + Inputs</div>
+      <div class="second-bg"></div>
+      <div class="inputs-wrapper">
+        <div class="inputs-title">Inputs:</div>
+        <div class="content">
+          <div class="input-type color">
+            <label for="color">Color:</label>
+            <input type="color" />
+          </div>
+          <div class="input-type photo">
+            <label for="image">Image upload:</label>
+            <input
+              name="image"
+              class="image-input"
+              type="file"
+              capture="user"
+              accept="image/*"
+            />
+          </div>
+          <div class="radio">
+            <svg class="checkbox-symbol">
+              <symbol id="check" viewbox="0 0 12 10">
+                <polyline
+                  points="1.5 6 4.5 9 10.5 1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                ></polyline>
+              </symbol>
+            </svg>
+
+            <div class="checkbox-container">
+              <input class="checkbox-input" id="apples" type="checkbox" />
+              <label class="checkbox" for="apples">
+                <span>
+                  <svg width="12px" height="10px">
+                    <use xlink:href="#check"></use>
+                  </svg>
+                </span>
+                <span>Apples</span>
+              </label>
+              <input class="checkbox-input" id="oranges" type="checkbox" />
+              <label class="checkbox" for="oranges">
+                <span>
+                  <svg width="12px" height="10px">
+                    <use xlink:href="#check"></use>
+                  </svg>
+                </span>
+                <span>Oranges</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- oncontextmenu="return false" | Disable rightclick  -->
+
+    <!-- Comparison slider -->
+    <section class="section__topic comparison-slider">
+      <div class="section__topic-title">Comparison image slider</div>
+
+      <div class="comparis">
+        <div class="img-comp-container">
+          <div class="img-comp-img">
+            <img src="./img/images/1.jpg" width="600" height="400" />
+          </div>
+          <div class="img-comp-img img-comp-overlay">
+            <img src="./img/images/2.jpg" width="600" height="400" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Comparison slider -->
+
+    <!-- Menu on image hover -->
+    <section class="section__topic section__topic-hovermenu">
+      <div class="section__topic-title">Hover menu + card perspective</div>
+      <div class="content">
+        <figure class="hover-menu">
+          <img src="https://picsum.photos/id/1060/800/480.jpg" />
+          <div>
+            <a href="#">Home</a>
+            <a href="#">Pricing</a>
+            <a href="#">About</a>
+          </div>
+        </figure>
+        <div class="card-container">
+          <div class="image-card perspective-left"></div>
+          <div class="image-card perspective-right"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Menu on image hover -->
+
+    <section class="section__topic section__topic-card-with-content">
+      <div class="section__topic-title">Card with additional content</div>
+      <div class="content">
+        <div class="card">
+          <img src="https://picsum.photos/id/404/367/267" />
+          <h3>Lorem ipsum</h3>
+          <div class="focus-content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
+              <a href="#">Link to source</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--[if lt IE 9]>
+      <script src="libs/html5shiv/es5-shim.min.js"></script>
+      <script src="libs/html5shiv/html5shiv.min.js"></script>
+      <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+      <script src="libs/respond/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="libs/jquery/jquery-1.11.2.min.js"></script>
+    <script src="libs/waypoints/waypoints.min.js"></script>
+    <script src="libs/animate/animate-css.js"></script>
+    <script src="libs/plugins-scroll/plugins-scroll.js"></script>
+
+    <script src="js/common.js"></script>
+  </body>
+</html>
