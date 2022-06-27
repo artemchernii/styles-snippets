@@ -17,7 +17,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<img src="https://i.ibb.co/3C9dJgx/snippets-img.png">
 
 Code snippets are templates that make it easier to enter repeating code patterns, such as loops or conditional-statements.
 
