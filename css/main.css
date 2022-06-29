@@ -172,6 +172,18 @@ body {
 .mouse-cursor-gradient-tracking:hover:before {
   --size: 200px;
 }
+
+.nice-border {
+  margin-left: 20px;
+  width: 60px;
+  height: 60px;
+  border: double 2px transparent;
+  border-radius: 10px;
+  background-image: linear-gradient(#1d2a3a, #1d2a3a),
+    linear-gradient(to right, #d78eca, #98a3fb);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
 /* Loader + Mouse cursor gradient tracking */
 
 /* Backdrop-filter blur */
